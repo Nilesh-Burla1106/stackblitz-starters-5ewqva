@@ -10,7 +10,7 @@ import { HEROES } from './mock-heroes';
   selector: 'app-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports:[HeroesComponent,CommonModule,HeroDetailComponent]
+  imports:[HeroesComponent,CommonModule,HeroDetailComponent],
   
 })
 export class AppComponent implements OnInit {

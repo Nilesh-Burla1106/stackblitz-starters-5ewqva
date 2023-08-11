@@ -18,7 +18,7 @@ export class HeroesComponent implements OnInit {
   // heroes=HEROES;
   // @Input() hero!:Hero;
   // even:boolean=false;
-  heroes : HEROES;
+  heroes=HEROES;
   constructor() { }
 // geteven(){
 //   return this.hero.id%2!=0

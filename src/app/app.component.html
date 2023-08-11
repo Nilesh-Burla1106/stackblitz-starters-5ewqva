@@ -5,4 +5,4 @@
 <p>{{age}}</p>
 <img [src]="avatar" alt=""/> -->
 <h1>{{title}}</h1>
-<app-heroes></app-heroes>
+<app-heroes *ngFor="let hero of heros" [hero]="hero"></app-heroes>

@@ -5,13 +5,11 @@
   <label for="name">Hero name: </label>
   <input id="name" [(ngModel)]="hero.name" placeholder="name">
 </div> -->
-<h2>
-  <ul>
-    <li>
-      <button>
-      <span></span>
-      <span></span>
+<ul class="heroes">
+  <li *ngIf="hero.id % 2==0 " >
+    <button type="button">
+      <span class="badge">{{ hero.id }} </span>
+      <span class="name">{{ hero.name }} </span>
     </button>
-  </li>
-  </ul>
-</h2>
+   </li>
+  </ul>

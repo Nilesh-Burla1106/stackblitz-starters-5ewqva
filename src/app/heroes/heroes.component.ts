@@ -16,13 +16,14 @@ export class HeroesComponent implements OnInit {
   //   name: 'Nilesh'
   // };
   // heroes=HEROES;
-  @Input() hero!:Hero;
-  even:boolean=false;
+  // @Input() hero!:Hero;
+  // even:boolean=false;
+  heroes : HEROES;
   constructor() { }
-geteven(){
-  return this.hero.id%2!=0
-}
+// geteven(){
+//   return this.hero.id%2!=0
+onselect(hero:Hero){}
+
   ngOnInit() {
   }
-
 }

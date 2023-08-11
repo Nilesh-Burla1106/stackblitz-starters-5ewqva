@@ -6,8 +6,8 @@
   <input id="name" [(ngModel)]="hero.name" placeholder="name">
 </div> -->
 <ul class="heroes">
-  <li *ngIf="geteven() " >
-    <button type="button">
+  <li *ngFor="let hero of heroes" [hero]="hero">
+    <button type="button" (click)="onselect(hero)">
       <span class="badge">{{ hero.id }} </span>
       <span class="name">{{ hero.name }} </span>
     </button>
